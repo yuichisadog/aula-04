@@ -1,0 +1,55 @@
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "hd hd hd"
+    "sd main main"
+    "sd main main"
+    "ft ft ft";
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.ga-linha-inteira {
+    grid-area: sd;
+}
+
+footer {
+    background-color: aqua;
+    
+}
+
+.grade-rodape {    
+    grid-area: ft;
+}
+
+.ga-3-3 {
+    grid-area: main;
+}
+
+.caixa {
+    display: flex;    
+    justify-content: center;
+    background-color: aqua;
+    width:100%;
+    border-style: solid;
+    padding: 5px;
+
+}
+
+.quadradinho {
+    background-color: blueviolet;
+    width:50px;
+    height: 50px;
+    border-style: solid;    
+}
+
+.bolinha {
+    background-color: rgb(226, 208, 43);
+    width:50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;  
+}
